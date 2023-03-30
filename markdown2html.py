@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-'''Python Script'''
+''' Python Script to generate HTML trough 
+   markdon syntax
+'''
 import sys
 import os
 import markdown
