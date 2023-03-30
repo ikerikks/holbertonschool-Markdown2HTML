@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""Pyhton Script
-"""
+#Python Script
 import sys
 import os
 
