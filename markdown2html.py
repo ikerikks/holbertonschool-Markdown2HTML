@@ -1,8 +1,8 @@
 #!/usr/bin/python3
+"""Pyhton Script
+"""
 import sys
 import os
-
-""" Python script """
 
 file = "README.md"
 
