@@ -17,10 +17,10 @@ if __name__ == "__main__":
     else:
         src_file = open(sys.argv[1], "r")
         dest_file = open(sys.argv[2], "w")
-    
-        #html conversion
+
+        # html conversion
         hmtl = markdown.markdown(src_file.read())
-        #send the content to the new file
+        # send the content to the new file
         dest_file.write(hmtl + '\n')
         src_file.close()
         dest_file.close()
