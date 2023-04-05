@@ -1,9 +1,7 @@
 #!/usr/bin/python3
-'''
-Converts Markdown files to HTML format.
+''' Converts Markdown files to HTML format.
 
-Usage: ./markdown2html.py README.md README.html
-'''
+Usage: ./markdown2html.py README.md README.html '''
 
 from sys import stderr, argv
 import os
