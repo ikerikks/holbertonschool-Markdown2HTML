@@ -5,7 +5,6 @@ Converts Markdown files to HTML format.
 Usage: ./markdown2html.py README.md README.html
 '''
 
-import sys
 from sys import stderr, argv
 import os
 import markdown
