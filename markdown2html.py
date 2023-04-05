@@ -1,15 +1,18 @@
 #!/usr/bin/python3
-''' Converts Markdown files to HTML format.
+""" Converts Markdown files to HTML format.
+Takes an argument 2 strings:
+First argument is the name of the Markdown file
+Second argument is the output file name
 
-Usage: ./markdown2html.py README.md README.html '''
+Usage: ./markdown2html.py README.md README.html """
 
 from sys import stderr, argv
 import os
 import markdown
 
 
-def main():
-    '''Main function to run the script.'''
+if __name__ == '__main__':
+
     if len(argv) < 3:
         print("Usage: ./markdown2html.py README.md README.html", file=stderr)
         exit(1)
@@ -31,7 +34,3 @@ def main():
         src_file.close()
         dest_file.close()
         exit(0)
-
-
-if __name__ == '__main__':
-    main()
