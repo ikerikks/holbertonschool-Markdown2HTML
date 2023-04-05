@@ -1,6 +1,10 @@
 #!/usr/bin/python3
-'''Python Script to generate HTML trough markdon syntax
 '''
+This script converts Markdown syntax to HTML format.
+
+Usage: ./markdown2html.py README.md README.html
+'''
+
 import sys
 import os
 import markdown
@@ -12,12 +16,17 @@ elif os.path.exists(sys.argv[1]) is False:
     print("Missing " + sys.argv[1], file=sys.stderr)
     exit(1)
 else:
+    # Open input and output files
     src_file = open(sys.argv[1], "r")
     dest_file = open(sys.argv[2], "w")
-    # html conversion
+
+    # Convert Markdown to HTML
     hmtl = markdown.markdown(src_file.read())
-    # send the content to the new file
+
+    # Write HTML content to output file
     dest_file.write(hmtl + '\n')
+
+    # Close files and exit
     src_file.close()
     dest_file.close()
     exit(0)
