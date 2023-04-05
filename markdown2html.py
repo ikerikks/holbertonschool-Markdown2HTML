@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""
-Converts Markdown files to HTML format.
+"""Converts Markdown files to HTML format.
 Takes an argument 2 strings:
 First argument is the name of the Markdown file
 Second argument is the output file name
